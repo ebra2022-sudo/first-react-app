@@ -8,7 +8,7 @@ import FunctionCompnent from './function_component.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <div>
-      <FunctionCompnent/>
+     
       <ClassComponent />
     </div>
   </StrictMode>,
