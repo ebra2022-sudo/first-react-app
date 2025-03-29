@@ -1,15 +1,26 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
-import ClassComponent from './class_component.jsx'
-import FunctionCompnent from './function_component.jsx'
+import {HelloWorld, HelloWorldLambda} from './function_component'
+
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div>
-     
-      <ClassComponent />
+    <div style={
+      {
+        
+      height: "100vh", 
+      width: "100vw", 
+      display: "flex",           // Enable flexbox
+      justifyContent: "center",  // Center horizontally
+      alignItems: "center",
+      flexDirection: "column"       // Center vertically
+      }
+    }>
+      <HelloWorld />
+      <HelloWorldLambda/>
     </div>
   </StrictMode>,
 )
