@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import {HelloWorld, HelloWorldLambda} from './function_component'
+import { Session } from './Array In React'
 
 
 
@@ -19,8 +20,7 @@ createRoot(document.getElementById('root')).render(
       flexDirection: "column"       // Center vertically
       }
     }>
-      <HelloWorld />
-      <HelloWorldLambda/>
+      <Session/>
     </div>
   </StrictMode>,
 )
